@@ -6,11 +6,11 @@ export const LightGrey = '#dedede';
 export const SideMargin = '0.5in';
 
 export const SkillList = ['Programming in Java, Python, JavaScript, TypeScript',
-  'Docker Containerization',
-  'Web Development in React and StencilJS',
-  'PostgreSQL, Firebase',
-  'App development with Android Studio',
   'Working with Spring Framework, Flask',
+  'Docker Containerization',
+  'PostgreSQL, Firebase',
+  'Web Development in React and StencilJS',
+  'App development with Android Studio',
   'REST APIs, AWS, Postman',
   'Version control with Git'];
 
