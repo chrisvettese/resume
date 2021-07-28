@@ -1,6 +1,6 @@
 import {makeStyles} from "@material-ui/core/styles";
-import {Divider, Typography} from "@material-ui/core";
-import {ProjectList, SideMargin} from "./Constants";
+import {Typography} from "@material-ui/core";
+import {ProjectList, SectionDivider, SideMargin} from "./Constants";
 
 const useStyles = makeStyles({
   container: {
@@ -24,7 +24,7 @@ function Projects() {
   return (
     <div className={classes.container}>
       <Typography variant='h2'>Software Projects</Typography>
-      <Divider style={{marginBottom: '8px'}}/>
+      <SectionDivider/>
       {
         ProjectList.map((project, index) => {
           return (

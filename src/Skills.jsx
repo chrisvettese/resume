@@ -1,6 +1,6 @@
 import {makeStyles} from "@material-ui/core/styles";
-import {SideMargin, LightGrey, SkillList} from "./Constants";
-import {Box, Divider, Typography} from "@material-ui/core";
+import {SideMargin, LightGrey, SkillList, SectionDivider} from "./Constants";
+import {Box, Typography} from "@material-ui/core";
 
 const useStyles = makeStyles({
   container: {
@@ -22,7 +22,7 @@ function Skills() {
   return (
     <div className={classes.container}>
       <Typography variant='h2'>Skills</Typography>
-      <Divider style={{marginBottom: '8px'}}/>
+      <SectionDivider/>
       <Box component="div" display="flex" style={{flexWrap: 'wrap'}}>
         {
           SkillList.map((skill, index) => {

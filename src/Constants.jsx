@@ -1,5 +1,7 @@
-export const Primary = '#437cb5';
-export const LightGrey = '#e8e8e8';
+import {Divider} from "@material-ui/core";
+
+export const Primary = '#4360b5';
+export const LightGrey = '#dedede';
 
 export const SideMargin = '0.5in';
 
@@ -84,3 +86,9 @@ export const ProjectList = [
     ]
   }
 ]
+
+export function SectionDivider() {
+  return (
+    <Divider style={{marginBottom: '8px', background: 'darkgrey'}}/>
+  );
+}

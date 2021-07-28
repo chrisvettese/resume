@@ -1,6 +1,6 @@
 import {makeStyles} from "@material-ui/core/styles";
-import {Divider, Typography} from "@material-ui/core";
-import {Jobs, SideMargin} from "./Constants";
+import {Typography} from "@material-ui/core";
+import {Jobs, SectionDivider, SideMargin} from "./Constants";
 
 const useStyles = makeStyles({
   container: {
@@ -32,7 +32,7 @@ function Work() {
   return (
     <div className={classes.container}>
       <Typography variant='h2'>Work Experience</Typography>
-      <Divider style={{marginBottom: '8px'}}/>
+      <SectionDivider/>
       {
         Jobs.map((job, index) => {
           return (
