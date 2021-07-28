@@ -45,7 +45,7 @@ function Header() {
             <SvgIcon className={classes.icon}>
               <path d="M12 0l2.139 2.629 3.068-1.441.786 3.297 3.389.033-.722 3.312 3.039 1.5-2.088 2.67 2.088 2.67-3.039 1.5.722 3.312-3.389.033-.786 3.297-3.068-1.441-2.139 2.629-2.139-2.629-3.068 1.441-.786-3.297-3.389-.033.722-3.312-3.039-1.5 2.088-2.67-2.088-2.67 3.039-1.5-.722-3.312 3.389-.033.786-3.297 3.068 1.441z"/>
             </SvgIcon>
-            <Typography>&nbsp;Dean's Honour List, 2020, 2021</Typography>
+            <Typography>&nbsp;Dean's Honour List, 2018 - 2021</Typography>
           </div>
           <div className={classes.iconText}>
             <LocationOnIcon className={classes.icon}/>
