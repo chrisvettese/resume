@@ -10,7 +10,7 @@ import Projects from "./Projects";
 const theme = createTheme({
   palette: {
     background: {
-      default: 'grey'
+      default: 'dimgrey'
     }
   },
   typography: {
