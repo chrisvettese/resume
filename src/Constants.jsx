@@ -5,14 +5,15 @@ export const LightGrey = '#dedede';
 
 export const SideMargin = '0.5in';
 
-export const SkillList = ['Programming in Java, Python, JavaScript, TypeScript',
-  'Working with Spring Framework, Flask',
+export const SkillList = [
+  'Java, Kotlin, TypeSceipt, JavaScript, Python',
+  'Spring Framework, Flask',
+  'PostgreSQL, MySQL, JPA, ORM, Firebase',
+  'REST APIs, Postman, Swagger/OpenAPI',
   'Docker Containerization',
-  'PostgreSQL, Firebase',
-  'Web Development in React and StencilJS',
-  'App development with Android Studio',
-  'REST APIs, AWS, Postman',
-  'Version control with Git'];
+  'Web development with React',
+  'Git version control'
+];
 
 export const Jobs = [
   {
@@ -47,11 +48,19 @@ export const Jobs = [
 
 export const ProjectList = [
   {
-    point: 'Participated in uOttaHack 2019, Hack the North 2019, uOttaHack 2020, and various MLH Local Hack Days',
+    point: 'Participated in Microsoft Student Hackathon, uOttaHack 2020, Hack the North 2019, and uOttaHack 2019',
     subpoints: []
   },
   {
-    point: 'Developed full stack hotel booking system, including a PostgreSQL database, Flask server, and React frontend',
+    point: 'Developed a Kotlin and Spring Framework rental advertising app for a university course',
+    subpoints: [
+      'Saved and updated data in a MySQL database using Spring repositories and JPA',
+      'Supported uploading and viewing of rental property images',
+      'Created endpoints according to REST API specification, and tested endpoints in Swagger'
+    ]
+  },
+  {
+    point: 'Developed full stack hotel booking system, with a PostgreSQL database, Flask server, and React frontend',
     subpoints: [
       'Dockerized the app so it can be easily deployed with any web hosting service',
       'Added PL/pgSQL scripts to database to determine hotel availability and prevent booking conflicts',
@@ -62,15 +71,12 @@ export const ProjectList = [
     point: 'Developed a home security system using Android Studio',
     subpoints: [
       'Implemented Google Cloud machine learning libraries to detect motion, and distinguish between humans and animals',
-      'Used Google Firebase to manage user accounts, and to allow users to check their home status from any location',
-      'Created system to allow multiple phones to be connected to a user account, to function as security cameras'
+      'Used Google Firebase to manage user accounts, and to allow users to check their home status from any location'
     ]
   },
   {
     point: 'Designed a web app with React to search for cooking recipes that match a user\'s ingredients, and rank them by healthiness',
-    subpoints: [
-      'Retrieved information from multiple APIs using HTTP requests'
-    ]
+    subpoints: []
   },
   {
     point: 'Developed a multiplayer, team-based action game in Java',
