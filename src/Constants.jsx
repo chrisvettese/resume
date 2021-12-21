@@ -6,11 +6,11 @@ export const LightGrey = '#dedede';
 export const SideMargin = '0.5in';
 
 export const SkillList = [
-  'Java, Kotlin, TypeSceipt, JavaScript, Python',
+  'Java, Kotlin, TypeScript, JavaScript, Python',
   'Spring Framework, Flask',
   'PostgreSQL, MySQL, JPA, ORM, Firebase',
   'REST APIs, Postman, Swagger/OpenAPI',
-  'Docker Containerization',
+  'Docker containerization',
   'Web development with React',
   'Git version control'
 ];
