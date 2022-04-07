@@ -1,91 +1,187 @@
-import {makeStyles} from "@material-ui/core/styles";
-import {Grid, Link, SvgIcon, Typography} from "@material-ui/core";
-import SchoolIcon from '@material-ui/icons/School';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
-import LanguageIcon from '@material-ui/icons/Language';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import {SideMargin, LightGrey, Primary} from "./Constants";
-import PhoneIcon from '@material-ui/icons/Phone';
-import EmailIcon from '@material-ui/icons/Email';
-import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
+import { SideMargin, LightGrey, Primary } from "./Constants";
+import { Box, Grid, Link, SvgIcon, Typography } from "@mui/material";
+import SchoolIcon from "@mui/icons-material/School";
+import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import LanguageIcon from "@mui/icons-material/Language";
+import PhoneIcon from "@mui/icons-material/Phone";
+import EmailIcon from "@mui/icons-material/Email";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import styled from "@emotion/styled";
 
-const useStyles = makeStyles({
-  header: {
-    height: '140px',
-    background: LightGrey
-  },
-  iconText: {
-    display: 'flex',
-    alignItems: 'center'
-  },
-  icon: {
-    color: Primary,
-    width: '15px',
-    height: '15px'
-  }
+const HeaderLink = styled(Link)({
+  textDecoration: "none",
+  color: "rgb(67, 96, 181)",
+  marginLeft: "0.25rem",
 });
 
 function Header() {
-  const classes = useStyles();
-
   return (
-    <div className={classes.header}>
-      <Typography variant='h1' align='center' style={{paddingTop: '0.3in'}}>Chris Vettese</Typography>
-      <Grid container style={{paddingLeft: SideMargin, marginTop: '-10px'}}>
+    <Box
+      sx={{
+        height: "140px",
+        background: LightGrey,
+      }}
+    >
+      <Typography variant="h1" align="center" style={{ paddingTop: "0.3in" }}>
+        Chris Vettese
+      </Typography>
+      <Grid container style={{ paddingLeft: SideMargin, marginTop: "-10px" }}>
         <Grid item xs={6}>
-          <div className={classes.iconText}>
-            <SchoolIcon className={classes.icon}/>
-            <Typography>&nbsp;BASc in Software Engineering, 3rd Year</Typography>
-          </div>
-          <div className={classes.iconText}>
-            <AccountBalanceIcon className={classes.icon}/>
-            <Typography>&nbsp;University of Ottawa</Typography>
-          </div>
-          <div className={classes.iconText}>
-            <SvgIcon className={classes.icon}>
-              <path d="M12 0l2.139 2.629 3.068-1.441.786 3.297 3.389.033-.722 3.312 3.039 1.5-2.088 2.67 2.088 2.67-3.039 1.5.722 3.312-3.389.033-.786 3.297-3.068-1.441-2.139 2.629-2.139-2.629-3.068 1.441-.786-3.297-3.389-.033.722-3.312-3.039-1.5 2.088-2.67-2.088-2.67 3.039-1.5-.722-3.312 3.389-.033.786-3.297 3.068 1.441z"/>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <SchoolIcon
+              sx={{
+                color: Primary,
+                width: "15px",
+                height: "15px",
+              }}
+            />
+            <Typography sx={{ ml: 0.5 }}>
+              BASc in Software Engineering, 4rd Year
+            </Typography>
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <AccountBalanceIcon
+              sx={{
+                color: Primary,
+                width: "15px",
+                height: "15px",
+              }}
+            />
+            <Typography sx={{ ml: 0.5 }}>University of Ottawa</Typography>
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <SvgIcon
+              sx={{
+                color: Primary,
+                width: "15px",
+                height: "15px",
+              }}
+            >
+              <path d="M12 0l2.139 2.629 3.068-1.441.786 3.297 3.389.033-.722 3.312 3.039 1.5-2.088 2.67 2.088 2.67-3.039 1.5.722 3.312-3.389.033-.786 3.297-3.068-1.441-2.139 2.629-2.139-2.629-3.068 1.441-.786-3.297-3.389-.033.722-3.312-3.039-1.5 2.088-2.67-2.088-2.67 3.039-1.5-.722-3.312 3.389-.033.786-3.297 3.068 1.441z" />
             </SvgIcon>
-            <Typography>&nbsp;Dean's Honour List, 2018 - 2021</Typography>
-          </div>
-          <div className={classes.iconText}>
-            <LocationOnIcon className={classes.icon}/>
-            <Typography>&nbsp;Ottawa, ON, Canada</Typography>
-          </div>
+            <Typography sx={{ ml: 0.5 }}>
+              Dean's Honour List, 2018 - 2022
+            </Typography>
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <LocationOnIcon
+              sx={{
+                color: Primary,
+                width: "15px",
+                height: "15px",
+              }}
+            />
+            <Typography sx={{ ml: 0.5 }}>Ottawa, ON, Canada</Typography>
+          </Box>
         </Grid>
         <Grid item xs={6}>
-          <div style={{marginLeft: '140px'}}>
-            <div className={classes.iconText}>
-              <LanguageIcon className={classes.icon}/>
+          <Box sx={{ ml: "140px" }}>
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <LanguageIcon
+                sx={{
+                  color: Primary,
+                  width: "15px",
+                  height: "15px",
+                }}
+              />
               <Typography>
-                <Link href="https://chrisvettese.github.io/" target="_blank">
-                  &nbsp;chrisvettese.github.io
-                </Link>
+                <HeaderLink
+                  href="https://chrisvettese.github.io/"
+                  target="_blank"
+                >
+                  chrisvettese.github.io
+                </HeaderLink>
               </Typography>
-            </div>
-            <div className={classes.iconText}>
-              <LinkedInIcon className={classes.icon}/>
+            </Box>
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <LinkedInIcon
+                sx={{
+                  color: Primary,
+                  width: "15px",
+                  height: "15px",
+                }}
+              />
               <Typography>
-                <Link href="https://www.linkedin.com/in/christopher-vettese/" target="_blank">
-                  &nbsp;linkedin.com/in/christopher-vettese/
-                </Link>
+                <HeaderLink
+                  href="https://www.linkedin.com/in/christopher-vettese/"
+                  target="_blank"
+                >
+                  linkedin.com/in/christopher-vettese/
+                </HeaderLink>
               </Typography>
-            </div>
-            <div className={classes.iconText}>
-              <PhoneIcon className={classes.icon}/>
-              <Typography>&nbsp;(416) 700-7221</Typography>
-            </div>
-            <div className={classes.iconText}>
-              <EmailIcon className={classes.icon}/>
+            </Box>
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <PhoneIcon
+                sx={{
+                  color: Primary,
+                  width: "15px",
+                  height: "15px",
+                }}
+              />
+              <Typography sx={{ ml: 0.5 }}>(416) 700-7221</Typography>
+            </Box>
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <EmailIcon
+                sx={{
+                  color: Primary,
+                  width: "15px",
+                  height: "15px",
+                }}
+              />
               <Typography>
-                <Link href="mailto: cvett018@uottawa.ca" target="_blank">
-                  &nbsp;cvett018@uottawa.ca
-                </Link>
+                <HeaderLink
+                  href="mailto: chris.vettese2@gmail.com"
+                  target="_blank"
+                >
+                  chris.vettese2@gmail.com
+                </HeaderLink>
               </Typography>
-            </div>
-          </div>
+            </Box>
+          </Box>
         </Grid>
       </Grid>
-    </div>
+    </Box>
   );
 }
 

@@ -1,36 +1,38 @@
-import {makeStyles} from "@material-ui/core/styles";
-import {SideMargin, LightGrey, SkillList, SectionDivider} from "./Constants";
-import {Box, Typography} from "@material-ui/core";
-
-const useStyles = makeStyles({
-  container: {
-    paddingLeft: SideMargin,
-    paddingRight: SideMargin,
-    paddingTop: '17px'
-  },
-  skill: {
-    background: LightGrey,
-    borderRadius: '3px',
-    margin: '4px',
-    padding: '5px'
-  }
-});
+import { SideMargin, SectionDivider, ListContainer } from "./Constants";
+import { Box, Typography } from "@mui/material";
 
 function Skills() {
-  const classes = useStyles();
-
   return (
-    <div className={classes.container}>
-      <Typography variant='h2'>Skills</Typography>
-      <SectionDivider/>
-      <Box component="div" display="flex" style={{flexWrap: 'wrap'}}>
-        {
-          SkillList.map((skill, index) => {
-            return <Typography key={index} className={classes.skill}>{skill}</Typography>
-          })
-        }
-      </Box>
-    </div>
+    <Box
+      sx={{
+        paddingLeft: SideMargin,
+        paddingRight: SideMargin,
+        paddingTop: "17px",
+      }}
+    >
+      <Typography variant="h2">Skills</Typography>
+      <SectionDivider />
+      <ListContainer>
+        <li>
+          <Typography>
+            Languages: Java, Kotlin, TypeScript, JavaScript, Python, SQL,
+            Postgres
+          </Typography>
+        </li>
+        <li>
+          <Typography>
+            Libraries: Spring Framework (Web MVC, WebFlux), Hibernate, Flask,
+            Express.js, Apollo Server/Client, React
+          </Typography>
+        </li>
+        <li>
+          <Typography>
+            Tools: GCP (Cloud Run, Cloud Storage), AWS (EC2, RDS), Docker,
+            GraphQL Federation, REST, Git
+          </Typography>
+        </li>
+      </ListContainer>
+    </Box>
   );
 }
 

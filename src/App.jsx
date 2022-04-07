@@ -1,52 +1,48 @@
-import {createTheme, ThemeProvider} from '@material-ui/core/styles';
-import {Button, CssBaseline} from "@material-ui/core";
-import {makeStyles} from '@material-ui/core/styles';
 import Header from "./Header";
 import Skills from "./Skills";
 import Work from "./Work";
-import {Primary} from "./Constants";
+import { Primary } from "./Constants";
 import Projects from "./Projects";
+import {
+  Box,
+  Button,
+  createTheme,
+  CssBaseline,
+  ThemeProvider,
+} from "@mui/material";
 
 const theme = createTheme({
   palette: {
     background: {
-      default: 'dimgrey'
-    }
+      default: "dimgrey",
+    },
   },
   typography: {
     body1: {
-      fontSize: '12px'
+      fontSize: "12.5px",
     },
     h1: {
-      fontSize: '35px',
-      fontWeight: 'bold'
+      fontSize: "35px",
+      fontWeight: "bold",
     },
     h2: {
-      fontSize: '23px',
-      fontWeight: 'bold'
+      fontSize: "23px",
+      fontWeight: "bold",
     },
     h3: {
-      fontSize: '17px',
-      fontWeight: 'bold',
-      color: Primary
+      fontSize: "17px",
+      fontWeight: "bold",
+      color: Primary,
     },
     h4: {
-      fontSize: '17px'
-    }
+      fontSize: "15px",
+      fontWeight: "bold",
+    },
   },
-
-});
-
-const useStyles = makeStyles({
-  center: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center'
-  }
 });
 
 function printDiv() {
-  const printContents = document.getElementById('printable').innerHTML;
+  const printContents = document.getElementById("printable").innerHTML;
   const originalContents = document.body.innerHTML;
 
   document.body.innerHTML = printContents;
@@ -55,25 +51,51 @@ function printDiv() {
 }
 
 function App() {
-  const classes = useStyles();
-
   return (
-    <div style={{flexDirection: 'column'}} className={classes.center}>
+    <Box
+      sx={{
+        flexDirection: "column",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <ThemeProvider theme={theme}>
-        <CssBaseline/>
-        <div className={classes.center} style={{marginTop: '30px', marginBottom: '-30px'}}>
-          <Button variant='contained' color='primary' onClick={() => printDiv()}>Print</Button>
-        </div>
-        <br/>
-        <div id='printable'
-             style={{width: '8.5in', height: '11in', background: 'white', margin: '50px'}}>
-          <Header/>
-          <Skills/>
-          <Work/>
-          <Projects/>
-        </div>
+        <CssBaseline />
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "30px",
+            marginBottom: "-30px",
+          }}
+        >
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={() => printDiv()}
+          >
+            Print
+          </Button>
+        </Box>
+        <br />
+        <Box
+          id="printable"
+          sx={{
+            width: "8.5in",
+            height: "11in",
+            background: "white",
+            m: "50px",
+          }}
+        >
+          <Header />
+          <Skills />
+          <Work />
+          <Projects />
+        </Box>
       </ThemeProvider>
-    </div>
+    </Box>
   );
 }
 

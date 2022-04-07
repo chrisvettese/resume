@@ -1,63 +1,59 @@
-import {makeStyles} from "@material-ui/core/styles";
-import {Typography} from "@material-ui/core";
-import {Jobs, SectionDivider, SideMargin} from "./Constants";
-
-const useStyles = makeStyles({
-  container: {
-    paddingLeft: SideMargin,
-    paddingRight: SideMargin,
-    paddingTop: '17px'
-  },
-  jobInfo: {
-    display: 'flex',
-    justifyContent: 'space-between'
-  },
-  jobContainer: {
-    marginBottom: '10px',
-    marginTop: '3px'
-  },
-  point: {
-    fontSize: '30px',
-    lineHeight: '0.6',
-    marginRight: '10px'
-  },
-  pointContainer: {
-    display: 'flex'
-  }
-});
+import { Jobs, ListContainer, SectionDivider, SideMargin } from "./Constants";
+import { Box, Typography } from "@mui/material";
 
 function Work() {
-  const classes = useStyles();
-
   return (
-    <div className={classes.container}>
-      <Typography variant='h2'>Work Experience</Typography>
-      <SectionDivider/>
-      {
-        Jobs.map((job, index) => {
-          return (
-            <div key={index} className={classes.jobContainer}>
-              <div className={classes.jobInfo}>
-                <Typography variant='h3'>{job.title}</Typography>
-                <Typography style={{fontWeight: 'bold'}}>{job.dates}</Typography>
-              </div>
-              <Typography variant='h4'>{job.company}</Typography>
-              {
-                job.points.map((point, pIndex) => {
-                    return (
-                      <div key={pIndex} className={classes.pointContainer}>
-                        <Typography className={classes.point}>&#x2022;</Typography>
-                        <Typography style={{lineHeight: '1.5'}}>{point}</Typography>
-                      </div>
-                    )
-                  }
-                )
-              }
-            </div>
-          )
-        })
-      }
-    </div>
+    <Box
+      sx={{
+        paddingLeft: SideMargin,
+        paddingRight: SideMargin,
+        paddingTop: "17px",
+      }}
+    >
+      <Typography variant="h2">Work Experience</Typography>
+      <SectionDivider />
+      {Jobs.map((job, index) => {
+        return (
+          <Box
+            key={index}
+            sx={{
+              marginBottom: "10px",
+              marginTop: "3px",
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+            >
+              <Box sx={{ width: 1 / 3 }}>
+                <Typography variant="h3">{job.title}</Typography>
+              </Box>
+              <Box
+                sx={{ width: 1 / 3, display: "flex", justifyContent: "center" }}
+              >
+                <Typography variant="h4">{job.company}</Typography>
+              </Box>
+              <Box
+                sx={{ width: 1 / 3, display: "flex", justifyContent: "right" }}
+              >
+                <Typography sx={{ fontWeight: "bold" }}>{job.dates}</Typography>
+              </Box>
+            </Box>
+            <ListContainer>
+              {job.points.map((point, pIndex) => {
+                return (
+                  <li key={pIndex}>
+                    <Typography>{point}</Typography>
+                  </li>
+                );
+              })}
+            </ListContainer>
+          </Box>
+        );
+      })}
+    </Box>
   );
 }
 
