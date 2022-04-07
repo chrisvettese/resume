@@ -41,7 +41,7 @@ export const Jobs = [
     dates: "05/2019 - 08/2019",
     points: [
       "Created a Java and Bash script to convert XML to JSON for a REST API",
-      "Debugged problems in Java program and designed code to correct them",
+      "Debugged issues in Java program and designed code to correct them",
     ],
   },
 ];
