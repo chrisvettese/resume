@@ -22,7 +22,7 @@ function Skills() {
         <li>
           <Typography>
             Libraries: Spring Framework (Web MVC, WebFlux), Hibernate, Flask,
-            Express.js, Apollo Server/Client, React
+            Node.js, Express.js, Apollo Server/Client, React
           </Typography>
         </li>
         <li>
