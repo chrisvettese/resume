@@ -15,14 +15,17 @@ export const Jobs = [
     title: "Software Engineer Intern",
     company: "TD Bank",
     dates: "05/2022 - 08/2022",
-    points: [],
+    points: [
+      "Developed Java/Spring services to allow branches to manage millions of bank accounts",
+      "Interacted with Oracle SQL Database using an ORM framework"
+    ],
   },
   {
     title: "Product Development Coop",
     company: "Mitel Networks",
     dates: "05/2021 - 08/2021",
     points: [
-      "Created web components for Echo design system using StencilJS and TypeScript. Investigated and resolved bugs reported by users for these components.",
+      "Created web components for UI component library using StencilJS and TypeScript",
     ],
   },
   {
@@ -30,8 +33,8 @@ export const Jobs = [
     company: "Thomson Reuters",
     dates: "01/2020 - 04/2020 & 09/2020 - 12/2020",
     points: [
-      "Developed Java/Spring microservices with a PostgreSQL database. Configured AWS EC2 instances for said microservices",
-      "Wrote Python scripts to automate database tasks",
+      "Developed Java/Spring microservices with PostgreSQL databases, running on AWS EC2 instances",
+      "Configured CI/CD pipelines for said microservices, and wrote Flyway database migrations",
       "Participated in the Agile development process as part of a Scrum Team",
     ],
   },
@@ -40,7 +43,7 @@ export const Jobs = [
     company: "Nokia",
     dates: "05/2019 - 08/2019",
     points: [
-      "Created a Java and Bash script to convert XML to JSON for a REST API",
+      "Created Bash script to automate testing of a REST API",
       "Debugged issues in Java program and designed code to correct them",
     ],
   },
@@ -62,15 +65,9 @@ export const ProjectList = [
   },
   {
     point:
-      "Participated in Microsoft Student Hackathon, uOttaHack 2020, Hack the North 2019, and uOttaHack 2019",
-    subpoints: [],
-  },
-  {
-    point:
-      "Developed full stack hotel booking system, with a PostgreSQL database, Flask server, and React frontend",
+      "Developed full stack hotel booking system, with a PostgreSQL database, Python Flask server, and React frontend",
     subpoints: [
       "Dockerized the app so it can be easily deployed with any web hosting service",
-      "Added PL/pgSQL scripts to database to determine hotel availability and prevent booking conflicts",
       "Utilized NginX as reverse proxy, and to serve React app",
     ],
   },

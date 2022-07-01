@@ -92,7 +92,7 @@ function Header() {
                 height: "15px",
               }}
             />
-            <Typography sx={{ ml: 0.5 }}>Ottawa, ON, Canada</Typography>
+            <Typography sx={{ ml: 0.5 }}>Toronto, ON, Canada</Typography>
           </Box>
         </Grid>
         <Grid item xs={6}>
