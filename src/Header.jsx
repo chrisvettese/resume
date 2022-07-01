@@ -42,7 +42,7 @@ function Header() {
               }}
             />
             <Typography sx={{ ml: 0.5 }}>
-              BASc in Software Engineering, 4rd Year
+              BASc in Software Engineering
             </Typography>
           </Box>
           <Box
