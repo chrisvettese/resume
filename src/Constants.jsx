@@ -22,7 +22,7 @@ export const Jobs = [
     dates: "02/2023 - present",
     points: [
       "Created, tuned, and debugged Apache Spark jobs running on AWS EMR for measuring ad traffic",
-      "Led end-to-end development of system to measure and attribute to scans of QR codes burnt into video ad creatives",
+      "Led end-to-end development of system to measure traffic and conversions of scans of QR codes burnt into video ad creatives",
       "Designed system to enable attribution of bidless ad traffic by reusing DMA-mitigation infrastructure with similar limitations",
       "Scaled up systems for large events such as Amazon Prime Day as part of team on-call and operations",
       "Performed migration and rewrite of Spark 2 apps to new orchestration system based on Spark 3",
