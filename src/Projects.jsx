@@ -3,6 +3,7 @@ import {
   ProjectList,
   SectionDivider,
   SideMargin,
+  ListPoint
 } from "./Constants";
 import { Box, Typography } from "@mui/material";
 import { Fragment } from "react";
@@ -22,15 +23,15 @@ function Projects() {
         {ProjectList.map((project, index) => {
           return (
             <Fragment key={index}>
-              <li>
+              <ListPoint>
                 <Typography>{project.point}</Typography>
-              </li>
+              </ListPoint>
               <ListContainer>
                 {project.subpoints.map((subpoint, sIndex) => {
                   return (
-                    <li key={sIndex}>
+                    <ListPoint key={sIndex}>
                       <Typography>{subpoint}</Typography>
-                    </li>
+                    </ListPoint>
                   );
                 })}
               </ListContainer>

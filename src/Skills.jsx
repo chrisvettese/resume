@@ -1,4 +1,4 @@
-import { SideMargin, SectionDivider, ListContainer } from "./Constants";
+import { SideMargin, SectionDivider, ListContainer, ListPoint } from "./Constants";
 import { Box, Typography } from "@mui/material";
 
 function Skills() {
@@ -13,24 +13,24 @@ function Skills() {
       <Typography variant="h2">Skills</Typography>
       <SectionDivider />
       <ListContainer>
-        <li>
+        <ListPoint>
           <Typography>
-            Languages: Java, Kotlin, TypeScript, JavaScript, Python, SQL,
+            Languages: Java, Scala, Kotlin, TypeScript, JavaScript, Python, SQL,
             Postgres
           </Typography>
-        </li>
-        <li>
+        </ListPoint>
+        <ListPoint>
           <Typography>
-            Libraries: Spring Framework (Web MVC, WebFlux), Hibernate, Flask,
+            Libraries: Apache Spark, Spring Framework (Web MVC, WebFlux), Hibernate, Flask,
             Node.js, Express.js, Apollo Server/Client, React
           </Typography>
-        </li>
-        <li>
+        </ListPoint>
+        <ListPoint>
           <Typography>
-            Tools: GCP (Cloud Run, Cloud Storage), AWS (EC2, RDS), Docker,
+            Tools: AWS (EC2, EMR, DynamoDB, ECS, S3, CloudFormation), GCP (Cloud Run, Cloud Storage), Docker,
             GraphQL Federation, REST, Git
           </Typography>
-        </li>
+        </ListPoint>
       </ListContainer>
     </Box>
   );

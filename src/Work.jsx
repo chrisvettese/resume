@@ -1,4 +1,4 @@
-import { Jobs, ListContainer, SectionDivider, SideMargin } from "./Constants";
+import { Jobs, ListContainer, SectionDivider, SideMargin, ListPoint } from "./Constants";
 import { Box, Typography } from "@mui/material";
 
 function Work() {
@@ -44,9 +44,9 @@ function Work() {
             <ListContainer>
               {job.points.map((point, pIndex) => {
                 return (
-                  <li key={pIndex}>
+                  <ListPoint key={pIndex}>
                     <Typography>{point}</Typography>
-                  </li>
+                  </ListPoint>
                 );
               })}
             </ListContainer>

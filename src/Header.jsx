@@ -1,9 +1,7 @@
 import { SideMargin, LightGrey, Primary } from "./Constants";
 import { Box, Grid, Link, SvgIcon, Typography } from "@mui/material";
 import SchoolIcon from "@mui/icons-material/School";
-import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import LanguageIcon from "@mui/icons-material/Language";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -24,9 +22,9 @@ function Header() {
       }}
     >
       <Typography variant="h1" align="center" style={{ paddingTop: "0.3in" }}>
-        Chris Vettese
+        Christopher Vettese
       </Typography>
-      <Grid container style={{ paddingLeft: SideMargin, marginTop: "-10px" }}>
+      <Grid container style={{ paddingLeft: SideMargin, marginTop: "5px" }}>
         <Grid item xs={6}>
           <Box
             sx={{
@@ -42,23 +40,8 @@ function Header() {
               }}
             />
             <Typography sx={{ ml: 0.5 }}>
-              BASc in Software Engineering
+              BASc in Software Engineering, University of Ottawa
             </Typography>
-          </Box>
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            <AccountBalanceIcon
-              sx={{
-                color: Primary,
-                width: "15px",
-                height: "15px",
-              }}
-            />
-            <Typography sx={{ ml: 0.5 }}>University of Ottawa</Typography>
           </Box>
           <Box
             sx={{
@@ -97,28 +80,6 @@ function Header() {
         </Grid>
         <Grid item xs={6}>
           <Box sx={{ ml: "140px" }}>
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "center",
-              }}
-            >
-              <LanguageIcon
-                sx={{
-                  color: Primary,
-                  width: "15px",
-                  height: "15px",
-                }}
-              />
-              <Typography>
-                <HeaderLink
-                  href="https://chrisvettese.github.io/"
-                  target="_blank"
-                >
-                  chrisvettese.github.io
-                </HeaderLink>
-              </Typography>
-            </Box>
             <Box
               sx={{
                 display: "flex",

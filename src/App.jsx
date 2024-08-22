@@ -30,15 +30,15 @@ const theme = createTheme({
       fontWeight: "bold",
     },
     h3: {
-      fontSize: "17px",
+      fontSize: "15px",
       fontWeight: "bold",
       color: Primary,
     },
     h4: {
       fontSize: "15px",
       fontWeight: "bold",
-    },
-  },
+    }
+  }
 });
 
 function printDiv() {

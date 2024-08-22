@@ -1,9 +1,14 @@
 import { Divider, styled } from "@mui/material";
 
-export const ListContainer = styled("ul")({
+export const ListContainer = styled('ul')({
   margin: 0,
   paddingLeft: "1rem",
 });
+
+export const ListPoint = styled('li')({
+  fontSize: "15px",
+  lineHeight: 0
+})
 
 export const Primary = "#4360b5";
 export const LightGrey = "#dedede";
@@ -12,11 +17,24 @@ export const SideMargin = "0.5in";
 
 export const Jobs = [
   {
+    title: "Software Development Engineer",
+    company: "Amazon",
+    dates: "02/2023 - present",
+    points: [
+      "Created, tuned, and debugged Apache Spark jobs running on AWS EMR for measuring ad traffic",
+      "Led end-to-end development of system to measure and attribute to scans of QR codes burnt into video ad creatives",
+      "Designed system to enable attribution of bidless ad traffic by reusing DMA-mitigation infrastructure with similar limitations",
+      "Scaled up systems for large events such as Amazon Prime Day as part of team on-call and operations",
+      "Performed migration and rewrite of Spark 2 apps to new orchestration system based on Spark 3",
+      "Conducted data investigations into traffic reporting discrepancies raised by advertisers and determined appropriate resolutions"
+    ]
+  },
+  {
     title: "Software Engineer Intern",
     company: "TD Bank",
-    dates: "05/2022 - 08/2022",
+    dates: "05/2022 - 12/2022",
     points: [
-      "Developed Java/Spring services to allow branches to manage millions of bank accounts",
+      "Developed Java/Spring middleware with a React frontend to allow branches to manage printing new credit and debit cards for customers",
       "Interacted with Oracle SQL Database using an ORM framework"
     ],
   },
@@ -67,29 +85,9 @@ export const ProjectList = [
     point:
       "Developed full stack hotel booking system, with a PostgreSQL database, Python Flask server, and React frontend",
     subpoints: [
-      "Dockerized the app so it can be easily deployed with any web hosting service",
-      "Utilized NginX as reverse proxy, and to serve React app",
+      "Dockerized the app so it can be easily deployed with any web hosting service"
     ],
-  },
-  {
-    point: "Developed a home security system using Android Studio",
-    subpoints: [
-      "Implemented Google Cloud machine learning libraries to detect motion, and distinguish between humans and animals",
-      "Used Google Firebase to manage user accounts, and to allow users to check their home status from any location",
-    ],
-  },
-  {
-    point: "Developed a multiplayer, team-based action game in Java",
-    subpoints: [
-      "Designed a TCP protocol to communicate between clients and the server; exchanging information such as live player positions and team scores",
-    ],
-  },
-  {
-    point: "Constructed an Android maze game in Java with libGDX",
-    subpoints: [
-      "Utilized the A* search algorithm for enemy pathfinding. Used multithreading to allow the algorithm to run separately from the rendering thread, to improve the framerate",
-    ],
-  },
+  }
 ];
 
 export function SectionDivider() {
