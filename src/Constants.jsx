@@ -26,7 +26,8 @@ export const Jobs = [
       "Designed system to enable attribution of bidless ad traffic by reusing DMA-mitigation infrastructure with similar limitations",
       "Scaled up systems for large events such as Amazon Prime Day as part of team on-call and operations",
       "Performed migration and rewrite of Spark 2 apps to new orchestration system based on Spark 3",
-      "Conducted data investigations into traffic reporting discrepancies raised by advertisers and determined appropriate resolutions"
+      "Conducted data investigations into traffic reporting discrepancies raised by advertisers and determined appropriate resolutions",
+      "Improved test coverage of Spark apps via unit and integration tests, reducing risk of service outages"
     ]
   },
   {
@@ -79,13 +80,6 @@ export const ProjectList = [
       "Set up CI/CD pipeline to deploy services to Google Cloud Run",
       "Created React Native driver app, React merchant and admin websites",
       "Participated in sprint planning as technical lead; consulted with team to prioritize work",
-    ],
-  },
-  {
-    point:
-      "Developed full stack hotel booking system, with a PostgreSQL database, Python Flask server, and React frontend",
-    subpoints: [
-      "Dockerized the app so it can be easily deployed with any web hosting service"
     ],
   }
 ];
