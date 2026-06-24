@@ -17,17 +17,28 @@ export const SideMargin = "0.5in";
 
 export const Jobs = [
   {
+    title: "Software Development Engineer II",
+    company: "Amazon",
+    dates: "10/2025 - present",
+    points: [
+      "Delivered Engaged View Attribution project, allowing Amazon advertisers to track engagement of their video ads and improving Amazon Ads' competitive position with attribution arbitration by Mobile Measurement Partners (MMPs)",
+      "Updated Amazon Attribution algorithms for above project, driving alignment to prioritize engaged view attribution over other traffic types",
+      "Supported launch of Amazon Ads' Unified Reporting: Performed time-sensitive backfill of 2 years of advertising traffic data via EMR/Spark to provide new report breakdowns for unified reporting surfaces",
+      "Root-caused latency issues in Attribution systems causing loss of MMP conversion claims; delivered optimized code reducing claim loss rate",
+      "Utilized Kiro and Claude Code for agentic-assisted software development, debugging, and operations, improving productivity such as faster outage mitigation and quicker unblocking of pipelines"
+    ]
+  },
+  {
     title: "Software Development Engineer",
     company: "Amazon",
-    dates: "02/2023 - present",
+    dates: "02/2023 - 10/2025",
     points: [
-      "Created, tuned, and debugged Apache Spark jobs running on AWS EMR for measuring ad traffic",
-      "Led end-to-end development of system to measure traffic and conversions of scans of QR codes burnt into video ad creatives",
-      "Designed system to enable attribution of bidless ad traffic by reusing DMA-mitigation infrastructure with similar limitations",
+      "Created, tuned, and debugged Apache Spark jobs running on AWS EMR for measuring ad traffic, including handling of duplicate, late, and out-of-order events",
+      "Led end-to-end development of Burnt-in QR Code Measurement: system to measure and attribute traffic and conversions from QR code scans burnt into video ad creatives",
+      "Designed expansion to above system to enable attribution of bidless (QR) ad traffic by reusing DMA-mitigation infrastructure with similar limitations",
       "Scaled up systems for large events such as Amazon Prime Day as part of team on-call and operations",
       "Performed migration and rewrite of Spark 2 apps to new orchestration system based on Spark 3",
       "Conducted data investigations into traffic reporting discrepancies raised by advertisers and determined appropriate resolutions",
-      "Improved test coverage of Spark apps via unit and integration tests, reducing risk of service outages"
     ]
   },
   {
@@ -35,8 +46,8 @@ export const Jobs = [
     company: "TD Bank",
     dates: "05/2022 - 12/2022",
     points: [
-      "Developed Java/Spring middleware with a React frontend to allow branches to manage printing new credit and debit cards for customers",
-      "Interacted with Oracle SQL Database using an ORM framework"
+      "Developed Java/Spring middleware with a React frontend to allow bank branches to manage printing new credit and debit cards for customers",
+      "Drove improvements to internal GraphQL API for fetching user account context"
     ],
   },
   {
@@ -54,7 +65,6 @@ export const Jobs = [
     points: [
       "Developed Java/Spring microservices with PostgreSQL databases, running on AWS EC2 instances",
       "Configured CI/CD pipelines for said microservices, and wrote Flyway database migrations",
-      "Participated in the Agile development process as part of a Scrum Team",
     ],
   },
   {

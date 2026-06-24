@@ -15,19 +15,18 @@ function Skills() {
       <ListContainer>
         <ListPoint>
           <Typography>
-            Languages: Java, Scala, Kotlin, TypeScript, JavaScript, Python, SQL,
-            Postgres
+            Languages: Java, Scala, Kotlin, TypeScript, JavaScript, Python, SQL
           </Typography>
         </ListPoint>
         <ListPoint>
           <Typography>
             Libraries: Apache Spark, Spring Framework (Web MVC, WebFlux), Hibernate, Flask,
-            Node.js, Express.js, Apollo Server/Client, React
+            Node.js, Express.js, Apollo Server/Client, React, Postgres
           </Typography>
         </ListPoint>
         <ListPoint>
           <Typography>
-            Tools: AWS (EC2, EMR, DynamoDB, ECS, S3, CloudFormation), GCP (Cloud Run, Cloud Storage), Docker,
+            Tools: Kiro, Claude Code, AWS (EC2, EMR, DynamoDB, ECS, S3, CloudFormation), GCP (Cloud Run, Cloud Storage), Docker,
             GraphQL Federation, REST, Git
           </Typography>
         </ListPoint>

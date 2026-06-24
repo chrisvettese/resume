@@ -10,7 +10,7 @@ import { Fragment } from "react";
 
 function Projects() {
   return (
-    <Box
+    /*<Box
       sx={{
         paddingLeft: SideMargin,
         paddingRight: SideMargin,
@@ -39,7 +39,8 @@ function Projects() {
           );
         })}
       </ListContainer>
-    </Box>
+    </Box>*/
+    <Fragment/>
   );
 }
 
