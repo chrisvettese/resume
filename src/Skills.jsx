@@ -15,13 +15,13 @@ function Skills() {
       <ListContainer>
         <ListPoint>
           <Typography>
-            Languages: Java, Scala, Kotlin, TypeScript, JavaScript, Python, SQL
+            Languages: Java, Scala, Kotlin, TypeScript, JavaScript, Python, SQL, CSS
           </Typography>
         </ListPoint>
         <ListPoint>
           <Typography>
             Libraries: Apache Spark, Spring Framework (Web MVC, WebFlux), Hibernate, Flask,
-            Node.js, Express.js, Apollo Server/Client, React, Postgres
+            Node.js, Express.js, Apollo Server/Client, Relay, React, React Testing Library, Jest, Postgres
           </Typography>
         </ListPoint>
         <ListPoint>
